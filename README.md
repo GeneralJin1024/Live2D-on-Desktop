@@ -25,3 +25,4 @@ https://live2d.github.io
 - 点击Cubism SDK for Web，下载相关文件；
 - 解压并进入目录，执行 `npm install`；
 - 执行 `npm run build-sample`。
+
