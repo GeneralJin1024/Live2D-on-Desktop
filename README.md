@@ -1,4 +1,4 @@
-#Live 2D Desktop Application
+# Live 2D Desktop Application
 
 **Powered by nw.js**
 - Implemented Drag and Drop 
@@ -7,10 +7,10 @@
 
 ## 鸣谢 Credits
 
-Live 2D Source(Web Version) from:
+Live 2D Source(Web Version) from:  
 https://github.com/stevenjoezhang/live2d-widget
 
-Inspired by：  
+Desktop version inspired by:   
 https://github.com/akiroz/Live2D-Widget
 
 点击看板娘的纸飞机按钮时，会出现一个彩蛋，这来自于[WebsiteAsteroids](http://www.websiteasteroids.com)。
