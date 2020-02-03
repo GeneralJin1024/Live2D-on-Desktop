@@ -26,3 +26,10 @@ https://live2d.github.io
 - 解压并进入目录，执行 `npm install`；
 - 执行 `npm run build-sample`。
 
+<center>  
+  
+![Demo1](https://github.com/GeneralJin1024/Live2D-on-Desktop/blob/master/demo/demo1.png "Demo1")
+
+![Demo2](https://github.com/GeneralJin1024/Live2D-on-Desktop/blob/master/demo/demo2.png "Demo2")
+
+</center> 
