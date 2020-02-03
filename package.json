@@ -1,0 +1,14 @@
+{
+    "name": "Live2D",
+    "main": "index.html",
+	"version": "0.1.0",
+	"window": {
+		"transparent": true,
+		"show": false,
+		"toolbar": false,
+		"frame": false,
+		"width":500,
+    "height":500,
+		"resizable":false
+	}
+}

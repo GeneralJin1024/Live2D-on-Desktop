@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <script src="autoload.js"></script>
+    <script>
+        $(document).ready(function () {
+            //$(“body”).css("background-color", "rgba(0,0,0,0)");
+            var gui = require('nw.gui');
+            var win = gui.Window.get();
+            var tray = new gui.Tray({ title: 'Tray', icon: '' });
+            var menu = new gui.Menu();
+            menu.append(new gui.MenuItem({ type: 'checkbox', label: 'box1' }));
+            tray.menu = menu;
+            gui.Screen.Init();
+            var screen = gui.Screen.screens[0];
+            win.moveTo(screen.work_area.width - win.width, screen.work_area.height - win.height);
+            win.show();
+        });
+    </script>  
+</head>
+	<body>
+        <script>
+            var gui = require('nw.gui');
+            var win = gui.Window.get();
+            var deltaX = 0;
+            var deltaY = 0;
+            function myMousemove(event) {
+                event = event || window.event;
+                win.moveTo(Math.round(event.screenX - deltaX), Math.round(event.screenY - deltaY));
+            };
+            function myMousedown(event) {
+                event = event || window.event;
+                deltaX = Math.abs(event.screenX - win.x);
+                deltaY = Math.abs(event.screenY - win.y);
+                document.addEventListener("mousemove", myMousemove);
+                document.addEventListener("mouseup", function() {
+                    document.removeEventListener("mousemove", myMousemove);
+                });     
+            }
+            document.addEventListener("mousedown", myMousedown);
+        </script>
+	</body>
+</html>
